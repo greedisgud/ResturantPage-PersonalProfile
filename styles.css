@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+body {
+  background: url("img/chef.jpeg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: rgb(252, 250, 250);
+}
+
+.header {
+  text-align: center;
+  margin-top: 40px;
+  font-style: italic;
+  font-size: 35px;
+}
+
+.nav-btn {
+  width: 200px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 18px;
+  font-family: sans-serif;
+  border: none;
+  text-decoration: none;
+  color: #333;
+  margin-bottom: 150px;
+
+  letter-spacing: 2px;
+  text-align: center;
+  position: relative;
+  transition: all 0.35s;
+}
+
+.nav-btn span {
+  position: relative;
+  z-index: 2;
+}
+
+.nav-btn:after {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #ff003b;
+  transition: all 0.35s;
+}
+
+.nav-btn:hover {
+  color: rgb(244, 142, 119);
+  border: 1px solid rebeccapurple;
+}
+
+.nav-btn:hover:after {
+  width: 100%;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  font-size: 30px;
+  animation: fadeIn 1.5s;
+  background-color: rgba(111, 111, 111, 0.6);
+  width: 500px;
+  margin: auto;
+  padding: 12px;
+}
+
+.menuImg {
+  width: 500px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-item {
+  background-color: rgb(255, 201, 135, 0.7);
+  padding: 15px;
+  color: black;
+  margin-bottom: 30px;
+}
+
+.menu-item:hover {
+  padding: 35px;
+  background-color: rgb(244, 142, 119, 0.8);
+}
+
+.foodDisc {
+  font-style: italic;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  font-size: 40px;
+  background-color: rgb(109, 96, 96, 0.5);
+  width: 400px;
+  padding: 15px;
+  margin: auto;
+}
