@@ -28,9 +28,11 @@ function createMenuItem(title, discription) {
   foodTitle.textContent = title;
 
   let disc = document.createElement("p");
+  disc.classList.add("foodDisc");
   disc.textContent = discription;
 
   const foodImage = document.createElement("img");
+  foodImage.classList.add("menuImg");
   foodImage.src = `img/${title.toLowerCase()}.jpeg`;
 
   menuItem.appendChild(foodImage);

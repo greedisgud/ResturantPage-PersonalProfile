@@ -2,11 +2,7 @@ function createHome() {
   const home = document.createElement("div");
   home.classList.add("home");
 
-  const homeImage = document.createElement("img");
-  homeImage.src = "img/chef.jpeg";
-
   home.appendChild(createParagraph("Best Italian Food in Town!"));
-  home.appendChild(homeImage);
   home.appendChild(createParagraph("Order now for takeout or delivery"));
   home.appendChild(createParagraph("Thank you for your support!"));
 
@@ -15,6 +11,7 @@ function createHome() {
 
 function createParagraph(text) {
   const para = document.createElement("p");
+  para.classList.add("homePara");
   para.textContent = text;
   return para;
 }
